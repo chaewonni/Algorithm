@@ -21,11 +21,11 @@ public class Q10757 {
 		int[] arr2 = new int[num +1];
 		
 		for(int i = 0; i<s.length(); i++) {
-			arr[i] = s.charAt(s.length()-1-i)-'0';
+			arr[i] = s.charAt(s.length()-i-1)-'0';
 		}
 		
 		for(int i = 0; i<ss.length(); i++) {
-			arr2[i] = ss.charAt(ss.length()-1-i)-'0';
+			arr2[i] = ss.charAt(ss.length()-i-1)-'0';
 		}
 		
 		for(int i = 0; i<num; i++) {
