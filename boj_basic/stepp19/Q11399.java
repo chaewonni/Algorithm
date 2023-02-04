@@ -1,18 +1,20 @@
-package boj_basic.stepp10;
+package boj_basic.stepp19;
 
 import java.util.Scanner;
 
-public class Q2750 {
+public class Q11399 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int[] arr = new int[N+1];
+		int[] arr = new int[1001];
+		int sum = 0;
+		int num = 0;
 		
 		for(int i = 0; i<N; i++) {
-			int num = sc.nextInt();
-			arr[i]=num;
+			int p = sc.nextInt();
+			arr[i] = p;
 		}
 		
 		int tmp = 0;
@@ -27,8 +29,12 @@ public class Q2750 {
 		}
 		
 		for(int i = 0; i<N; i++) {
-			System.out.println(arr[i]);
+				num += arr[i];
+				sum+= num;
 		}
+		
+		System.out.println(sum);
+
 	}
 
 }
