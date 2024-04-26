@@ -38,3 +38,18 @@ dfs(graph, V, dfs_visited)
 print()
 bfs(graph, V, bfs_visited)
 print()
+
+# def bfs_with_adjacency_matrix(g, start, visited):
+#     queue = deque([start])
+#     visited[start] = True
+
+#     while queue:
+#         current_node = queue.popleft()
+#         print(current_node, end=' ')
+
+#         # 현재 노드에서 갈 수 있는 모든 노드를 탐색
+#         for neighbor in range(len(g[current_node])):
+#             # 연결이 되어있고 방문하지 않은 노드라면
+#             if g[current_node][neighbor] == 1 and not visited[neighbor]:
+#                 visited[neighbor] = True
+#                 queue.append(neighbor)
