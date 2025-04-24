@@ -33,3 +33,5 @@ for left in range(5):
         result = min(result, dp[len(lst)-1][left][right])
 
 print(result)
+
+# 현재까지 어떻게 왔는지를 생각해보기
